@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    scroll-behavior: smooth;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+}
+/* Nav section */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.container{
+    margin: 0 150px;
+}
+.navlogo{
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+    
+ 
+
+}
+.navitems a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-size: 18px;
+}
+a:hover{
+    color:  yellow;
+}
+.navsection{
+    background-color: rgb(9, 63, 9);
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbuttons{
+    border: 4px solid gray;
+    border-radius: 30px;
+    color: white;
+    padding: 8px 12px;
+    background-color: rgb(9, 63, 9);
+    transition: 0.5sec all;
+}
+.navbuttons:hover{
+    background-color: rgb(65, 7, 7);
+}
+
+.hamburgermenu{
+    width: 50px;
+    height: 40px;
+    border: solid (9, 63, 9);
+    background-color:rgb(9, 63, 9) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    
+
+}
+.hamburgermenu > span{
+    background-color: white;
+    width: 35px;
+    height: 5px;
+    border-radius: 10px;
+  
+}
+
+
+/* Hero section */
+.heromain{
+    margin-top: 4rem;
+    padding: 80px; 
+    background-color: rgb(9, 63, 9);
+}
+
+.herocontent>h2{
+    color: yellowgreen;
+    font-size: 50px;
+    font-weight: 100px;
+    width: 700px;
+    margin: 30px 50px;
+    
+}
+.herocontent>p{
+    color: #afb9cb;
+    font-size: 25px;
+    font-weight: 100px;
+    width: 600px;
+    margin: 30px 50px;
+
+    
+}
+.herobutton :first-child{
+    background-color: gray;
+    color: white;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 10rem;
+    transition: 0.5sec all;
+}
+.herobutton :first-child:hover{
+    background-color: burlywood;
+}
+.herobutton :nth-child(2){
+    background-color: rgb(9, 63, 9);
+    color: #afb9cb;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+}
+    .herobutton :nth-child(2):hover{
+ color: white;  
+
+
+}
+.herobutton{
+    transform: translateX(40px);
+}
+.herodiv{
+    display: flex;
+}
+.heroimage{
+    animation: identifier 2s alternate infinite ease-in-out;
+}
+@keyframes identifier {
+    0%{
+        transform: translateY(10%);
+    }
+}
+
+.brand{
+    display: flex;
+    justify-content: space-between;
+padding: 10px 70px; 
+background-color: #f3f5fa;
+    
+}
+.brand img{
+    width: 150px;
+    height: 80px;
+    filter: grayscale(100%);
+    transform: scale(1.2);
+}
+.brand img:hover{
+    filter: grayscale(0%);
+}
+
+.branSection{
+    padding: 15px 0px;
+    
+}
+
+
+.text{
+ 
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+}
+
+.TextButton{
+    border: 2px solid green;
+    padding: 10px;
+    width: 10rem;
+    font-size: 15px;
+
+    
+}
+.TextButton:hover{
+    background-color: green;
+}
+
+.border1{
+    background-color: green;
+    width: 50px;
+    transform: translateY(5px);
+    border-bottom: 4px solid green;
+    margin: auto;
+
+}
+
+.Content>h2{
+    width: 600px;
+}
+.Content>p{
+    width: 600px;
+}
+.box{
+    background-color: #efefef;
+    width: 600px;
+   
+}
+.ContentMain{
+    display: flex;
+    
+
+}
+.ContentImage{
+    transform: translateX(200px);
+  
+
+}
+
+
+@media (max-width:1000px) {
+    .navitems a{
+        display: none;
+    }
+
+ 
+    .navbuttons{
+        display: none;
+    }
+    .herocontent h2{
+        font-size:20px ;
+            margin-left: 130px; 
+         
+ 
+
+    }
+
+    .herobutton :nth-child(2):hover{
+        color: white;  
+       
+       
+       }
+           .herodiv{
+               flex-direction: column;
+           }
+         .heromain{
+           margin-top: 4rem;
+           padding: 0px; 
+           
+         }
+    .herocontent p{
+        font-size:20px ;
+        text-align: center;
+        width: 70%;
+    }
+    .herobutton{
+        transform: translateX(150px);
+        
+    }
+    .hamburgermenu{
+        transform: translateX(120px);
+    }
+    .ContentMain{
+        flex-direction: column;
+       
+    }
+
+    .brand{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    @media (max-width:620px) {
+        .brand{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+
+    }
+   
+    
+
+
+
